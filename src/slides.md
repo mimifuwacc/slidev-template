@@ -4,6 +4,9 @@ title: Slide Template
 class: text-center
 colorSchema: light
 transition: none
+fonts:
+  sans: Noto Sans JP
+  weights: "400,700"
 drawings:
   persist: false
 ---
