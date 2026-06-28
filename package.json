@@ -1,0 +1,29 @@
+{
+  "name": "slide-template",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "slidev build src/slides.md --out ../dist",
+    "dev": "slidev src/slides.md --open",
+    "export:pdf": "mkdir -p output && slidev export src/slides.md --output output/slides.pdf",
+    "export:pptx": "mkdir -p output && slidev export src/slides.md --format pptx --output output/slides.pptx",
+    "prepare": "vp config && node scripts/link-node.js"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.16.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vue": "^3.5.33"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.61.1",
+    "vite-plus": "catalog:"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.9.0",
+      "onFail": "download"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+diff --git a/dist/index.js b/dist/index.js
+index fbd5761f2ac04e6535daed77175233b424698ace..819ad2d3fc4dcffaa8d3fb641e504b27777665e6 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -3359,7 +3359,6 @@ function useElementVisibility(element, options = {}) {
+ }
+ //#endregion
+ //#region useEventBus/internal.ts
+-/* #__PURE__ */
+ const events = /* @__PURE__ */ new Map();
+ //#endregion
+ //#region useEventBus/index.ts
+@@ -5777,7 +5776,7 @@ function usePerformanceObserver(options, callback) {
+ }
+ //#endregion
+ //#region usePointer/index.ts
+-const defaultState = (/* #__PURE__ */ {
++const defaultState = ({
+ 	x: 0,
+ 	y: 0,
+ 	pointerId: 0,
